@@ -14,7 +14,7 @@
             </div>
             <nav>
                 <a href ="#">Home</a>
-                <a href ="#">Menu</a>
+                <a href="Menu">Menu</a>
                 <a href ="#">Cart</a>
                 <button class="login-btn" onclick="openLoginModal()">Login</button>
             </nav>
@@ -46,7 +46,7 @@
         </section>
 
         <section class = "best-seller">
-            <h2>Best Seller</h2>
+            <h2>Best Seller / 베스트셀러</h2>
             <div class="products">
                 <div class="product">
                     <img src="images/bachibomatong.jpg" alt="Ba chỉ bò Mỹ ướp mật ong">
@@ -113,50 +113,40 @@
             </div>
         </footer>
         <!-- Login Modal (ẩn ban đầu) -->
-    <div id="loginModal" class="modal" style="display: none;">
-        <div class="modal-content">
-            <span class="close" onclick="closeLoginModal()">&times;</span>
-            <img src="images/logo.png" alt="Mam Mam Logo" class="modal-logo">
-            <h1 class="modal-title">MĂM MĂM</h1>
-            <h2 class="modal-subtitle">VUI LÒNG ĐĂNG NHẬP</h2>
-
-            <form action="login" method="post">
-                <label>Username</label>
-                <input type="text" name="username" placeholder="Số điện thoại/ Gmail" required>
-
-                <label>Password</label>
-                <input type="password" name="password" required>
-
-                <div class="forgot">
-                    <a href="#">Quên mật khẩu?</a>
-                </div>
-
-                <button type="submit">Submit</button>
-            </form>
-
-            <p class="register">
-                Bạn chưa có tài khoản? <a href="register.jsp"><strong>Đăng ký ngay</strong></a>
-            </p>
+        <div id="loginModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+                <img src="images/logo.png" alt="Mam Mam Logo" class="modal-logo">
+                <h1 class="modal-title">MĂM MĂM</h1>
+                <h2 class="modal-subtitle">VUI LÒNG ĐĂNG NHẬP</h2>
+                <form action="login" method="post">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Số điện thoại/ Gmail" required>
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                    <div class="forgot"><a href="#">Quên mật khẩu?</a></div>
+                    <button type="submit">Submit</button>
+                </form>
+                <p class="register">Bạn chưa có tài khoản? <a href="register.jsp"><strong>Đăng ký ngay</strong></a></p>
+            </div>
         </div>
-    </div>
 
-    <!-- JavaScript mở/đóng modal -->
-    <script>
-        function openLoginModal() {
-            document.getElementById('loginModal').style.display = 'block';
-        }
-
-        function closeLoginModal() {
-            document.getElementById('loginModal').style.display = 'none';
-        }
-
-        window.onclick = function(event) {
-            const modal = document.getElementById('loginModal');
-            if (event.target === modal) {
-                closeLoginModal();
+        <script>
+            function openLoginModal() {
+                document.getElementById('loginModal').style.display = 'block';
             }
-        }
-    </script>
+
+            function closeLoginModal() {
+                document.getElementById('loginModal').style.display = 'none';
+            }
+
+            window.onclick = function (event) {
+                const modal = document.getElementById('loginModal');
+                if (event.target === modal) {
+                    closeLoginModal();
+                }
+            }
+        </script>
 
     </body>
 </html>
