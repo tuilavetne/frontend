@@ -1,0 +1,139 @@
+body{
+    font-family:Arial, sans-serif;
+    background:#fafafa; margin:0;
+    padding:20px;
+}
+
+.title{
+    text-align:center;
+    color:#8b2f2f;
+    margin-bottom:20px;
+}
+
+.no-order{
+    text-align:center;
+    color:gray;
+}
+
+.order-card{
+    background:#fff;
+    border-radius:10px;
+    padding:15px 20px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+    margin-bottom:20px;}
+
+.order-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.badge{
+    padding:4px 10px;
+    border-radius:15px;
+    font-size:.9rem;
+    color:#fff;
+}
+
+.badge.pending    {
+    background:#ff9800;
+}
+
+.badge.preparing  {
+    background:#03a9f4;
+}
+
+.badge.delivering {
+    background:#673ab7;
+}
+
+.badge.completed  {
+    background:#4caf50;
+}
+
+.badge.cancelled  {
+    background:#f44336;
+}
+
+.tracker{
+    display:flex;
+    justify-content:space-between;
+    margin:12px 0;
+}
+
+.step{
+    flex:1;
+    position:relative;
+    text-align:center;
+    font-size:.85rem;
+    color:#aaa;
+}
+
+.step::before{
+    content:'';
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#ccc;
+    display:block;
+    margin:0 auto 6px;
+}
+
+.step.done{
+    color:#4caf50;
+}
+
+.step.done::before{
+    background:#4caf50;
+}
+
+.step:not(:last-child)::after{
+    content:'';
+    position:absolute; 
+    top:8px;
+    left:50%;
+    width:100%;
+    height:2px;
+    background:#ccc;
+    z-index:-1;
+}
+.step.done + .step::after{
+    background:#4caf50;
+} 
+
+.summary{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.detail-btn{
+    background:#8b2f2f;
+    color:#fff;
+    border:none;
+    padding:6px 14px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.detail-btn:hover{
+    background:#a94444;
+}
+
+.detail table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+.detail th,.detail td{
+    border:1px solid #ddd;
+    padding:6px;
+    text-align:center;
+}
+
+.detail th{
+    background:#f3f3f3;
+}
+
