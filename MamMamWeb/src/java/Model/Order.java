@@ -1,10 +1,9 @@
-package Model;
+package model;
 
 import java.io.Serializable;
 import java.util.List;
 
 public class Order implements Serializable {
-
     private String id;
     private String fullName;
     private String phone;
@@ -22,7 +21,7 @@ public class Order implements Serializable {
         this.note = note;
         this.payment = payment;
         this.items = items;
-        this.status = "pending";
+        this.status = "pending"; 
     }
 
     public String getId() {
@@ -68,4 +67,4 @@ public class Order implements Serializable {
         }
         return total + 15000;
     }
-}
+} 

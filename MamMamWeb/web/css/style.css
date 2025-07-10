@@ -1,11 +1,4 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : Jun 13, 2025, 10:09:21 PM
-    Author     : ADMIN
-*/
+
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
@@ -25,6 +18,31 @@ header {
 .logo img {
     height: 110px;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #FFF0DD;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-bar a,
+.nav-bar button.login-btn {
+    text-decoration: none;
+    color: #9B3F3F;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
 
 nav a {
     margin: 0 15px;
@@ -192,6 +210,36 @@ nav a {
 
 .view-all .order-btn:hover {
     background-color: #7A2B2B;
+}
+
+.cart-icon-center {
+    display: flex;
+    justify-content: flex-start;  /* căn sang trái */
+    margin: 20px 0 40px 20px;     /* khoảng cách so với section khác */
+}
+
+.cart-icon-center a {
+    width: 60px;
+    height: 60px;
+    background-color: #c0392b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.cart-icon-center a:hover {
+    transform: scale(1.05);
+}
+
+.cart-icon-center img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
 }
 
 
