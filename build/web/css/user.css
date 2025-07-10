@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF0DD;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9D484F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-container h2 {
+    margin-bottom: 10px;
+    color: #9D484F;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-form label {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.gender-box {
+    margin-bottom: 15px;
+}
+
+.gender-box span {
+    font-weight: bold;
+}
+
+.gender-box label {
+    margin-right: 15px;
+}
+
+button[type="submit"] {
+    background-color: #9D484F;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #7a2f34;
+}
+
+.message {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #9D484F;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+
+

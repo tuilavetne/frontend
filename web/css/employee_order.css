@@ -1,0 +1,120 @@
+/* General body style */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #FFF4E8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header / Navbar */
+header.navbar {
+    display: flex;
+    align-items: center;              /* Canh giữa theo chiều dọc */
+    background-color: #FFF4E8;
+    padding: 20px 40px;
+    border-bottom: 2px solid #E9C9BE;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+header .logo img {
+    width: 70px;                      /* Tăng kích thước logo */
+    height: auto;
+    margin-right: 25px;
+}
+
+header h2 {
+    color: #973737;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Main content */
+main.order-table-section {
+    padding: 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.order-table-section h3 {
+    color: #973737;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* Table styling */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.order-table th,
+.order-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #f0d8d1;
+    font-size: 15px;
+}
+
+.order-table th {
+    background-color: #F6DFD7;
+    color: #973737;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.order-table tr:hover {
+    background-color: #FFF0E8;
+    transition: 0.3s;
+}
+
+/* Status coloring */
+td.status {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    color: #c26c2f;
+}
+
+.status-confirmed {
+    color: #2f8f3e;
+}
+
+.status-delivered {
+    color: #1c64a5;
+}
+
+/* Nút hành động */
+button.btn-confirm,
+button.btn-cancel {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 2px;
+}
+
+button.btn-confirm {
+    background-color: #2e7d32;
+    color: white;
+}
+
+button.btn-cancel {
+    background-color: #c62828;
+    color: white;
+}
+
+button.btn-confirm:hover {
+    background-color: #1b5e20;
+}
+
+button.btn-cancel:hover {
+    background-color: #b71c1c;
+}
